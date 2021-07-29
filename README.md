@@ -1,11 +1,13 @@
 # Chatroom
 
-Application de messagerie (mai 2021).
+Application de messagerie fait en Webesocket pendant ma formation O'Clock en mai 2021.
 
 ### Technos et outils utilisés
 
 React
 React-Redux
+Websocket
+Axios
 SCSS
 Javascript
 Webpack
@@ -16,7 +18,6 @@ Dotenv
 CoreJS
 
 ## Fonctionnalités
-d 
-- Accès aux recettes
-- Ajout d'un login sécurisé avec JWT
-- Possibilité d'avoir une liste de recettes favoris
+
+- Envoie de message
+- Ajout d'un login 
