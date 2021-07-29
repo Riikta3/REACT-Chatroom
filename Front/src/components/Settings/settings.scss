@@ -1,0 +1,62 @@
+@use 'src/styles/vars';
+
+.settings {
+  position: fixed;
+  display: flex;
+  top: 20px;
+  right: -130px;
+  transition: right 0.3s ease-in;
+
+  &--open {
+    right: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+  }
+
+  &__info {
+    color: #fff;
+    background-color: #a396af85;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    width: 130px;
+    text-align: center;
+  }
+
+  &__input {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-bottom: 0.5rem;
+  }
+
+  &__submit {
+    background-color: vars.$button;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+  }
+
+  &__toggle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    background-color: white;
+    border: none;
+    font-size: 1.7rem;
+    color: vars.$button;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease-in;;
+  }
+}
+
+.settings--open > .settings__toggle {
+  transform: rotate(45deg);
+}
+

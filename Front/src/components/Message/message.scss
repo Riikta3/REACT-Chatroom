@@ -1,0 +1,35 @@
+@use 'src/styles/vars';
+
+.message {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  position: relative;
+
+  &__author {
+    margin-bottom: 1rem;
+  }
+
+  &--mine {
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  &__content {
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 26px;
+      border-left: 7px solid transparent;
+      border-right: 7px solid white;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid white;
+    }
+    display: inline-block;
+    background-color: white;
+    margin-top: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    color: vars.$messageContent;
+  }
+}
